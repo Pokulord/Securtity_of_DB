@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_08i29v7" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="17.7.1">
+  <bpmn:collaboration id="Collaboration_0n27im2">
+    <bpmn:participant id="Participant_12slapr" name="Онлайн-школа шахмат" processRef="Process_0owkiv9" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_0owkiv9" isExecutable="false">
+    <bpmn:laneSet id="LaneSet_1yqgscn">
+      <bpmn:lane id="Lane_1pypzt0" name="Админитсоратор Школы">
+        <bpmn:flowNodeRef>StartEvent_0lnw24a</bpmn:flowNodeRef>
+        <bpmn:childLaneSet id="LaneSet_0cpcwkv">
+          <bpmn:lane id="Lane_19bqxqu">
+            <bpmn:flowNodeRef>StartEvent_0lnw24a</bpmn:flowNodeRef>
+          </bpmn:lane>
+        </bpmn:childLaneSet>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_0hu1dpu" name="">
+        <bpmn:childLaneSet id="LaneSet_0cvtzdq">
+          <bpmn:lane id="Lane_0zezbht" />
+          <bpmn:lane id="Lane_0nkejxh" />
+        </bpmn:childLaneSet>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="StartEvent_0lnw24a" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0n27im2">
+      <bpmndi:BPMNShape id="Participant_12slapr_di" bpmnElement="Participant_12slapr" isHorizontal="true">
+        <dc:Bounds x="156" y="78" width="754" height="970" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1pypzt0_di" bpmnElement="Lane_1pypzt0" isHorizontal="true">
+        <dc:Bounds x="186" y="78" width="724" height="342" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_19bqxqu_di" bpmnElement="Lane_19bqxqu" isHorizontal="true">
+        <dc:Bounds x="216" y="78" width="694" height="342" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0hu1dpu_di" bpmnElement="Lane_0hu1dpu" isHorizontal="true">
+        <dc:Bounds x="186" y="420" width="724" height="628" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0zezbht_di" bpmnElement="Lane_0zezbht" isHorizontal="true">
+        <dc:Bounds x="216" y="420" width="694" height="568" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0nkejxh_di" bpmnElement="Lane_0nkejxh" isHorizontal="true">
+        <dc:Bounds x="216" y="988" width="694" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_0lnw24a">
+        <dc:Bounds x="362" y="272" width="36" height="36" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
